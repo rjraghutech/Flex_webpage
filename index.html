@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex exam</title>
+    <script src="https://kit.fontawesome.com/844985f32c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .flex{
+            display: flex;
+        }
+        .container{
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 200px;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .header{
+            background-color: red;
+        }
+        .nav1 a{
+            text-decoration: none;
+            color: white;
+            padding: 0 10px;
+            justify-items: center;
+        }
+        .nav1{}
+        .text1{
+            font-size: 30px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        i{
+            /* color: white; */
+        }
+        .containermain{
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 200px;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+        .aside a{
+            text-decoration: none;
+            color: black;
+            width: 150px;
+            margin: 8px 0;
+        }
+        .aside i{
+            margin-right: 7px;
+        }
+        .aside{
+            flex-direction: column;
+            background-color: orange;
+            padding: 15px 20px;
+            border-radius: 10px;
+        }
+        .aside #explore{
+            border: 3px solid rgb(252, 0, 0);
+        }
+        .aside #apply{
+            align-items: flex-end;
+            background-color: red;
+            border-radius: 5px;
+            padding: 5px 5px 8px 5px;
+            margin-top: 120px;
+        }
+        .beside{
+            background-color: orange;
+            border-radius: 10px;
+            /* flex-wrap: wrap; */
+            width: 650px;
+            /* margin-left: 20px; */
+        }
+        .beside img{
+            /* flex-wrap: wrap; */
+            height: 150px;
+            width: 170px;
+            padding: ;
+            margin-left: 30px;
+            justify-content: center;
+            border-radius: 8px;
+            margin-top: 5px;
+            margin-bottom: 8px;
+        }
+        .cars1{
+            font-size: 25px;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        .containerfoot{
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 200px;
+            justify-content: space-between;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            margin-top: 25px;
+        }
+        .footer{
+            background-color: red;
+        }
+        .containerfoot a{
+            text-decoration: none;
+            color: white;
+        }
+        .social a{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container flex">
+              <h1 class="text1">WALLPAPERS</h1>  
+
+                <nav class="nav1">
+                    <a href="#"><i class="fa-regular fa-bell"></i></a>
+                    <a href="#">Aircampus <i class="fa-solid fa-user"></i></a>
+                </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="containermain flex">
+            <div class="aside flex">
+                <a href="#" class="asidea"><i class="fa-solid fa-house-user"></i>Home</a>
+                <a href="#" class="asidea" id="explore"><i class="fa-solid fa-bomb"></i>Explore</a>
+                <a href="#" class="asidea"><i class="fa-brands fa-blogger"></i>Blog</a>
+                <a href="#" class="asidea"><i class="fa-solid fa-newspaper"></i>Editorial</a>
+                <a href="#" class="asidea"><i class="fa-solid fa-circle-arrow-up"></i>Submit</a>
+                <a href="#" class="asidea" id="apply"><i class="fa-solid fa-gear"></i>Apply</a>
+            </div>
+            <div class="beside">
+                <h2 class="cars1">WALLPAPERS</h2>
+                <img src="/dark-wallpapers.jpg" alt="Wallpaper" class="carsimg">
+                <img src="/dark-wallpapers.jpg" alt="Wallpaper" class="carsimg">
+                <img src="/dark-wallpapers.jpg" alt="Wallpaper" class="carsimg">
+                <img src="/dark-wallpapers.jpg" alt="Wallpaper" class="carsimg">
+                <img src="/dark-wallpapers.jpg" alt="Wallpaper" class="carsimg">
+                <img src="/dark-wallpapers.jpg" alt="Wallpaper" class="carsimg">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="containerfoot flex">
+            <a href="#"><i class="fa-regular fa-copyright"></i>Aircampus</a>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+      </div>
+    </footer>
+</body>
+</html>
