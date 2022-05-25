@@ -1,43 +1,264 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* My CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 200px;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.header {
+    background-color: red;
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.nav1 {
+    align-items: center;
+    justify-items: center;
+}
+
+.text1 {
+    font-size: 30px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.containermain {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 200px;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.aside a {
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    margin: 8px 0;
+}
+
+.aside i {
+    margin-right: 7px;
+}
+
+.aside {
+    flex-direction: column;
+    background-color: orange;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.aside #explore {
+    border: 3px solid rgb(252, 0, 0);
+}
+
+.aside #apply {
+    align-items: flex-end;
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px 5px 8px 5px;
+    margin-top: 120px;
+}
+
+.beside {
+    background-color: orange;
+    border-radius: 10px;
+    /* flex-wrap: wrap; */
+    width: 650px;
+    /* margin-left: 20px; */
+}
+
+.beside img {
+    /* flex-wrap: wrap; */
+    height: 150px;
+    width: 170px;
+    padding: ;
+    margin-left: 30px;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.cars1 {
+    font-size: 25px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.containerfoot {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 200px;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+
+.footer {
+    background-color: red;
+}
+
+.containerfoot a {
+    text-decoration: none;
+    color: white;
+}
+
+.social a {
+    padding: 10px;
 }
